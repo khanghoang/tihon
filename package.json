@@ -1,8 +1,0 @@
-{
-  "name": "tihon",
-  "version": "0.1.0",
-  "description": "React-like view library",
-  "main": "index.js",
-  "author": "Khang Hoang",
-  "license": "MIT"
-}
