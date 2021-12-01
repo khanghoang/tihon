@@ -2,6 +2,7 @@ const webpack = require('webpack');
 const path = require('path');
 
 module.exports = {
+  mode: 'development',
   entry: './app.js',
   target: 'web',
 
@@ -13,23 +14,8 @@ module.exports = {
     rules: [
       {
         test: /\.js|jsx$/,
-        loader: 'babel-loader',
-        query: {
-          babelrc: false,
-          presets: [
-            'stage-2'
-          ],
-          plugins: [
-            [
-              'transform-react-jsx',
-              {
-                pragma: 'createElement'
-              }
-            ],
-            'transform-class-properties'
-          ]
-        }
+        loader: 'babel-loader'
       }
     ]
-  }
+  },
 }
